@@ -1,0 +1,28 @@
+*RestTemplate*
+#It is used to create applications that consume Restful services.
+#Provides with synchronous client to perform http requests.
+#templates for common scenarios of http like get,post,delete,put are created using rest template.
+eg:-
+--creating a rest template instance--
+
+RestTemplate template=new RestTemplate();
+--exchange function--
+template.exchange(<URL>,<HTTP METHOD>,HttpEntity instance,class type).getBody();
+
+HttpEntity:
+#It is a base or parent for RequestEntity and ResponseEntity.
+#This class represents request or response entity.
+#It consists of headers and body.
+
+*Swagger*
+*Having a relook as Spring MVC,application context and connecting to postgresSql*
+*relooking spring MVC*
+#applicationcontext in sspring MVC
+#contextconfiguration
+#contextloaderlistener
+
+#Bean resources in spring mvc with dispatcher servlet can be loaded from a separate configuration file called applicationcontext.
+#appcontext represents IoC Container.
+#contextloaderlistener in web.xml and contextconfigloader help in loading and accessing applicationcontext.
+
+#H2 database
